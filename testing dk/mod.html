@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DK GADGETS STORE</title>
+<style>
+/* ==== DK GADGETS STORE STYLES ==== */
+:root{
+  --bg:#0f1220;
+  --card:#171a2b;
+  --accent:#34d399;
+  --accent-2:#60a5fa;
+  --text:#e5e7eb;
+  --muted:#a3a7b7;
+  --shadow: 0 10px 30px rgba(0,0,0,.25);
+  --radius: 12px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;
+  line-height:1.5;
+}
+a{color:var(--accent-2);text-decoration:none}
+img{width:100%;display:block;border-radius:var(--radius)}
+.container{width:min(1200px,92%);margin:auto}
+.grid{display:grid;gap:20px;}
+.grid-4{grid-template-columns:repeat(auto-fit, minmax(250px,1fr));}
+
+/* NAVIGATION */
+.nav{
+  position:sticky;top:0;background:rgba(15,18,32,.85);
+  backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.08);
+  z-index:50;
+}
+.nav-inner{display:flex;justify-content:space-between;align-items:center;padding:.9rem 0}
+.brand{display:flex;align-items:center;gap:.6rem;font-weight:700}
+.brand .logo{
+  width:40px;height:40px;border-radius:12px;display:grid;place-items:center;
+  background:linear-gradient(135deg,var(--accent),var(--accent-2));
+  color:#0b1020;font-weight:900;box-shadow:var(--shadow)
+}
+.nav a{margin-left:1rem;font-weight:600;color:var(--text);opacity:.9;transition:.3s}
+.nav a:hover{color:var(--accent);opacity:1}
+
+/* HEADER */
+header {
+  background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+             url("images.jpg/WhatsApp Image 2025-07-26 at 01.09.26_8159d4de.jpg") center/cover no-repeat;
+  color: white;
+  padding: 5rem 1rem;
+  text-align: center;
+}
+header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+}
+header p{
+  margin-top:1rem;
+  font-size:1.2rem;
+  color:#cbd5e1;
+}
+
+/* BADGES + CARDS */
+.badge{
+  display:inline-flex;gap:.4rem;align-items:center;
+  background:rgba(99,102,241,.15);
+  border:1px solid rgba(99,102,241,.25);
+  color:#c7d2fe;padding:.35rem .6rem;border-radius:999px;
+  font-size:.82rem;font-weight:700;margin-bottom:1rem;
+}
+.card{
+  background:var(--card);border:1px solid rgba(255,255,255,.06);
+  border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);
+  transition:.3s;
+}
+.card:hover{transform:translateY(-6px);}
+
+/* SERVICES */
+.table{width:100%;border-collapse:collapse;margin-top:1rem}
+.table th,.table td{padding:.75rem 1rem;border-bottom:1px solid rgba(255,255,255,.08)}
+.table th{color:#cbd5e1;text-align:left;font-size:.85rem;text-transform:uppercase;letter-spacing:.08em}
+
+/* CONTACT */
+.contact-form{
+  display:flex;flex-direction:column;gap:10px;
+  background:var(--card);padding:1.5rem;border-radius:var(--radius);box-shadow:var(--shadow);
+}
+.contact-form input,.contact-form textarea{
+  padding:.7rem;border:none;border-radius:var(--radius);outline:none;
+}
+.contact-form button{
+  background:var(--accent-2);color:white;padding:.7rem;border:none;
+  border-radius:var(--radius);cursor:pointer;font-weight:600;transition:.3s;
+}
+.contact-form button:hover{background:var(--accent);}
+.map{width:100%;min-height:380px;border:0;border-radius:var(--radius);box-shadow:var(--shadow)}
+
+/* FOOTER */
+.footer{margin-top:3rem;padding:2rem 0;color:var(--muted);border-top:1px solid rgba(255,255,255,.08);text-align:center}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+ <h1>FOR THE BEST AND AUTHENTIC GADGETS</h1>
+ <p>Your trusted store for Phones, Tablets, Laptops & Accessories</p>
+</header>
+
+<!-- NAVIGATION -->
+<nav class="nav">
+  <div class="container nav-inner">
+    <div class="brand"><div class="logo">DK</div> GADGETS STORE</div>
+    <div>
+      <a href="#products">Products</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- PRODUCTS -->
+<section id="products" class="container">
+  <span class="badge">New Stock</span>
+  <h1>Latest Gadgets for Every Need</h1>
+  <div class="grid grid-4">
+    <div class="card"><img src="images.jpg/WhatsApp Image 2025-07-25 at 14.25.57_bc517d0f.jpg" alt="Smartphone"></div>
+    <div class="card"><img src="images.jpg/WhatsApp Image 2025-07-25 at 14.25.57_d5d3b006.jpg" alt="Smartphone"></div>
+    <div class="card"><img src="images.jpg/WhatsApp Image 2025-07-26 at 01.09.27_c4ebc15a.jpg" alt="Laptop"></div>
+    <div class="card"><img src="images.jpg/WhatsApp Image 2025-07-26 at 01.11.05_6fcd28da.jpg" alt="Tablet"></div>
+    <div class="card"><img src="images.jpg/WhatsApp Image 2025-07-26 at 01.11.06_261acc56.jpg" alt="AirPods"></div>
+    <div class="card"><img src="images.jpg/WhatsApp Image 2025-07-26 at 01.11.05_cd4ce0c0.jpg" alt="Smartwatch"></div>
+    <div class="card"><img src="images.jpg/WhatsApp Image 2025-08-16 at 10.45.19_715f3989.jpg" alt="Accessories"></div>
+    <div class="card"><img src="images.jpg/WhatsApp Image 2025-07-25 at 14.25.58_76004009.jpg" alt="Chargers"></div>
+    <div class="card"><img src="images.jpg/WhatsApp Image 2025-07-25 at 14.25.58_f9039338.jpg" alt="Chargers"></div>
+    <div class="card"><img src="images.jpg/WhatsApp Image 2025-07-26 at 01.10.59_04215ee6.jpg" alt="Chargers"></div>
+    <div class="card"><img src="images.jpg/WhatsApp Image 2025-07-26 at 01.10.59_e8fe6778.jpg" alt="Chargers"></div>
+    <div class="card"><img src="images.jpg/WhatsApp Image 2025-07-26 at 01.11.00_2d930adb.jpg" alt="Chargers"></div>
+    <div class="card"><img src="images.jpg/WhatsApp Image 2025-07-26 at 01.11.00_2dc23e0e.jpg" alt="Chargers"></div>
+    <div class="card"><img src="images.jpg/WhatsApp Image 2025-07-26 at 01.11.00_8d614837.jpg" alt="Chargers"></div>
+    <div class="card"><img src="images.jpg/WhatsApp Image 2025-07-26 at 01.11.01_7c9c2aa2.jpg" alt="Chargers"></div>
+    <div class="card"><img src="images.jpg/WhatsApp Image 2025-07-26 at 01.11.01_cc7d7584.jpg" alt="Chargers"></div>
+    <div class="card"><img src="images.jpg/WhatsApp Image 2025-07-26 at 01.11.02_8fe9937e.jpg" alt="Chargers"></div>
+    <div class="card"><img src="images.jpg/WhatsApp Image 2025-07-26 at 01.11.05_cd4ce0c0.jpg" alt="Chargers"></div>
+    <div class="card"><img src="images.jpg/WhatsApp Image 2025-07-26 at 01.11.05_d22732b4.jpg" alt="Chargers"></div>
+    <div class="card"><img src="images.jpg/WhatsApp Image 2025-07-26 at 01.11.07_bd66ea9e.jpg" alt="Chargers"></div>
+    <div class="card"><img src="images.jpg/WhatsApp Image 2025-08-16 at 10.44.50_205c67e6.jpg" alt="Chargers"></div>
+    <div class="card"><img src="images.jpg/WhatsApp Image 2025-08-16 at 10.44.53_77e999b3.jpg" alt="Chargers"></div>
+     <div class="card"><img src="images.jpg/WhatsApp Image 2025-08-16 at 10.44.57_7a702cd7.jpg" alt="Chargers"></div>
+     <div class="card"><img src="images.jpg/WhatsApp Image 2025-08-16 at 10.44.58_131f133a.jpg" alt="Chargers"></div>
+     <div class="card"><img src="" alt="Chargers"></div>
+     <div class="card"><img src="" alt="Chargers"></div>
+     <div class="card"><img src="" alt="Chargers"></div>
+     <div class="card"><img src="" alt="Chargers"></div>
+     <div class="card"><img src="" alt="Chargers"></div>
+     
+
+     
+
+    
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="container">
+  <span class="badge">Our Expertise</span>
+  <h2>Services Offered</h2>
+  <table class="table">
+    <tr><th>Service</th></tr>
+    <tr><td>Phone Fixing</td></tr>
+    <tr><td>Loan Phones Available</td></tr>
+    <tr><td>Tablet/Laptop Repairs</td></tr>
+  </table>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="container">
+  <span class="badge">Get in Touch</span>
+  <h2>Contact Us</h2>
+  <div class="contact">
+    <div class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </div>
+    <div style="flex:1; padding-left:20px;">
+      <p><strong>Phone:</strong> +256 758 61 337</p>
+      <p><strong>Email:</strong> dkphoneclinic@gmail.com</p>
+      <p><strong>Facebook:</strong> <a href="#">DK update</a></p>
+      <p><strong>TikTok:</strong> <a href="#">DK GADGETS STORE</a></p>
+      <p><strong>Instagram:</strong> <a href="#">dk_gadgets2</a></p>
+      <p><strong>X (Twitter):</strong> <a href="#">dkgadgets</a></p>
+      <h3 style="margin-top:1.5rem;">Find Us</h3>
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18..." allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer container">
+ <b><p>BEST GADGETS STORE © 2025</p></b>
+</footer>
+
+</body>
+</html>
